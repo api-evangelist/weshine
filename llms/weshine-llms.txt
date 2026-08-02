@@ -1,0 +1,24 @@
+# Weshine (闪萌)
+
+> Weshine (闪萌, Shanmeng), operated by Beijing Shanqu Information Technology Co., Ltd, is a Chinese GIF / animated-sticker (表情) search engine. It offers a business-to-business "Expression API" (表情API) that powers GIF discovery, search, and generation inside social apps, input methods, and browsers. The platform reports 800M+ users covered, 300M+ daily searches, and 200M+ animated images sent per day. API access is via business partnership (there is no public self-serve developer portal, OpenAPI specification, or SDK).
+
+## Company
+- Website: http://www.weshineapp.com/
+- Operator: Beijing Shanqu Information Technology Co., Ltd (北京闪趣信息技术有限公司)
+- Sector: Consumer / digital media / GIF & sticker search
+
+## API
+- Expression API landing page (表情API): http://www.weshineapp.com/api
+- Interfaces documented (marketing description, no machine-readable spec published):
+  - Hot / trending interface (热门接口) — trending GIFs by category, refreshed hourly
+  - Search interface (搜索接口) — real-time keyword/phrase GIF search with ranking/filtering (gif, webp, mp4)
+  - Magic-image interface (神配图接口) — semantic phrase matching that composites a caption onto a background GIF
+- Access model: business partnership / integration (contact required); no published base URL or authentication reference
+
+## Products
+- KK Keyboard (kk键盘)
+- WeChat mini-program and official account
+
+## Notes
+- No OpenAPI/AsyncAPI/GraphQL specification, SDK, CLI, changelog, or /.well-known discovery documents were found published as of 2026-07-21.
+- This llms.txt was generated from the API Evangelist catalog entry and the provider's public site, not fetched from the provider.

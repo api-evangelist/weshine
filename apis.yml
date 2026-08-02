@@ -1,8 +1,13 @@
 aid: weshine
 name: Weshine
-description: 'Weshine is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Weshine (闪萌, Shanmeng), operated by Beijing Shanqu Information Technology Co., Ltd (北京闪趣信息技术有限公司),
+  is a Chinese GIF and animated-sticker (表情) search engine. It offers a business-to-business "Expression API"
+  (表情API) with three documented interfaces — a hot/trending interface (热门接口) that returns trending GIFs by
+  category refreshed hourly, a real-time search interface (搜索接口) supporting gif/webp/mp4 and multi-dimensional
+  ranking, and a "magic image" interface (神配图接口) that semantically matches a phrase to a background GIF and
+  composites a caption onto it. The platform reports 800M+ users covered, 300M+ daily searches, and 200M+ animated
+  images sent per day, powering social apps, input methods (including its own KK Keyboard), and browsers. API access
+  is via business partnership; no public self-serve developer portal, OpenAPI specification, or SDK is published.'
 url: https://raw.githubusercontent.com/api-evangelist/weshine/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +15,57 @@ x-backed-by:
 - dcm-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: http://www.weshineapp.com/favicon.ico
 tags:
 - Company
 - Consumer
-apis: []
+- GIF
+- Stickers
+- Search
+- Images
+- Media
+- Emoji
+- Content
+apis:
+- name: Weshine Expression API
+  description: 'The Weshine (闪萌) Expression API (表情API) is a business-to-business GIF/animated-sticker service with
+    three interfaces: a hot/trending interface (热门接口), a real-time search interface (搜索接口) supporting gif/webp/mp4,
+    and a "magic image" interface (神配图接口) that composites a caption onto a semantically matched background GIF. No
+    machine-readable specification, base URL, or authentication reference is published; access is via business partnership.'
+  humanURL: http://www.weshineapp.com/api
+  properties:
+  - type: APIReference
+    url: http://www.weshineapp.com/api
+  - type: Documentation
+    url: http://www.weshineapp.com/api
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/weshine-domain-security.yml
+- type: LLMsTxt
+  url: llms/weshine-llms.txt
 - type: Website
   url: http://www.weshineapp.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
